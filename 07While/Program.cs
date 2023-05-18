@@ -16,10 +16,10 @@ Console.SetCursorPosition(xc, yc);
 Console.WriteLine("+");
 
 int count = 0;
-int x = xa;
-int y = xb;
+int x = xa; // возьмем за первую точку нашу вершину
+int y = ya; // возьмем за первую точку нашу вершину
 
-while (count < 0)
+while (count < 10000)
 {
     int what = new Random().Next(0, 3); // от 0 до 2
     if (what == 0)
